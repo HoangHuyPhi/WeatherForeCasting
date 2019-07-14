@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{E405483A-5F26-4783-93A5-35DC4474CAB5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherForeCasting/ViewController.cs">
+    <Files>
+      <File FileName="WeatherForeCasting/ViewController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WeatherForeCasting" expanded="True">
+            <Node name="WeatherForeCasting" expanded="True">
+              <Node name="ViewController.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WeatherForeCasting FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.69B02B76-BAB3-4927-9CFC-4D96441F2B0A" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
