@@ -1,6 +1,11 @@
 ﻿<Properties StartupConfiguration="{E405483A-5F26-4783-93A5-35DC4474CAB5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherForeCasting/ViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherForeCasting/Main.storyboard">
     <Files>
+      <File FileName="WeatherForeCasting/Info.plist" />
+      <File FileName="WeatherForeCasting/WeatherViewController.cs" Line="30" Column="54" />
+      <File FileName="WeatherForeCasting/SearchViewController.cs" Line="17" Column="10" />
+      <File FileName="WeatherForeCasting/Main.storyboard" />
+      <File FileName="WeatherForeCasting/Main.cs" Line="12" Column="1" />
       <File FileName="WeatherForeCasting/ViewController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -8,14 +13,18 @@
         <State name="__root__">
           <Node name="WeatherForeCasting" expanded="True">
             <Node name="WeatherForeCasting" expanded="True">
-              <Node name="ViewController.cs" selected="True" />
+              <Node name="Main.storyboard" selected="True" />
+              <Node name="SearchViewController.cs" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.WeatherForeCasting FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.69B02B76-BAB3-4927-9CFC-4D96441F2B0A" />
+  <MonoDevelop.Ide.ItemProperties.WeatherForeCasting automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E921D7C6-BD87-4D4D-89D5-0080CFB8BE77" HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

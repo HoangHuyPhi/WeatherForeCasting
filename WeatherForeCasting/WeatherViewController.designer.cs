@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Visual Studio from the outlets and
 // actions declared in your storyboard file.
@@ -11,27 +11,27 @@ using UIKit;
 
 namespace WeatherForeCasting
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("WeatherViewController")]
+    partial class WeatherViewController
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel titleName { get; set; }
+        UIKit.UILabel latitudeLabel { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITextField userName { get; set; }
+        UIKit.UILabel longtitudeLabel { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (titleName != null) {
-                titleName.Dispose ();
-                titleName = null;
+            if (latitudeLabel != null) {
+                latitudeLabel.Dispose ();
+                latitudeLabel = null;
             }
 
-            if (userName != null) {
-                userName.Dispose ();
-                userName = null;
+            if (longtitudeLabel != null) {
+                longtitudeLabel.Dispose ();
+                longtitudeLabel = null;
             }
         }
     }

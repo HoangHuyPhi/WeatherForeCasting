@@ -134,6 +134,14 @@
         <Compile Include="ViewController.designer.cs">
             <DependentUpon>ViewController.cs</DependentUpon>
         </Compile>
+        <Compile Include="SearchViewController.cs" />
+        <Compile Include="SearchViewController.designer.cs">
+          <DependentUpon>SearchViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="WeatherViewController.cs" />
+        <Compile Include="WeatherViewController.designer.cs">
+          <DependentUpon>WeatherViewController.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

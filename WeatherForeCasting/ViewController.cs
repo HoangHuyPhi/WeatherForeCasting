@@ -14,6 +14,7 @@ namespace WeatherForeCasting
         {
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
+
         }
 
         public override void DidReceiveMemoryWarning()
@@ -21,5 +22,16 @@ namespace WeatherForeCasting
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
+
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            base.PrepareForSegue(segue, sender);
+            if (segue.Identifier == "Search")
+            {
+                var viewcontroller = segue.DestinationViewController as SearchViewController;
+                viewcontroller.userNameInput = userName.Text; 
+            }
+        }
+
     }
 }
