@@ -16,14 +16,27 @@ namespace WeatherForeCasting
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel cityLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel latitudeLabel { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel longtitudeLabel { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel tempLabel { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (cityLabel != null) {
+                cityLabel.Dispose ();
+                cityLabel = null;
+            }
+
             if (latitudeLabel != null) {
                 latitudeLabel.Dispose ();
                 latitudeLabel = null;
@@ -32,6 +45,11 @@ namespace WeatherForeCasting
             if (longtitudeLabel != null) {
                 longtitudeLabel.Dispose ();
                 longtitudeLabel = null;
+            }
+
+            if (tempLabel != null) {
+                tempLabel.Dispose ();
+                tempLabel = null;
             }
         }
     }

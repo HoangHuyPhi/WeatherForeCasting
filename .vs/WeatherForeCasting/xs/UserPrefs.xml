@@ -1,30 +1,28 @@
 ﻿<Properties StartupConfiguration="{E405483A-5F26-4783-93A5-35DC4474CAB5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherForeCasting/Main.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WeatherForeCasting/WeatherViewController.cs">
     <Files>
-      <File FileName="WeatherForeCasting/Info.plist" />
-      <File FileName="WeatherForeCasting/WeatherViewController.cs" Line="30" Column="54" />
-      <File FileName="WeatherForeCasting/SearchViewController.cs" Line="17" Column="10" />
+      <File FileName="WeatherForeCasting/SearchViewController.cs" Line="13" Column="21" />
+      <File FileName="WeatherForeCasting/WeatherViewController.cs" Line="95" Column="74" />
+      <File FileName="WeatherForeCasting/ViewController.cs" />
       <File FileName="WeatherForeCasting/Main.storyboard" />
-      <File FileName="WeatherForeCasting/Main.cs" Line="12" Column="1" />
-      <File FileName="WeatherForeCasting/ViewController.cs" Line="1" Column="1" />
+      <File FileName="WeatherForeCasting/WeatherData.cs" />
+      <File FileName="../../Weather/Weather/WeatherApp/MainPage.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WeatherForeCasting" expanded="True">
             <Node name="WeatherForeCasting" expanded="True">
-              <Node name="Main.storyboard" selected="True" />
+              <Node name="References" expanded="True" />
               <Node name="SearchViewController.cs" expanded="True" />
+              <Node name="WeatherViewController.cs" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.WeatherForeCasting automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E921D7C6-BD87-4D4D-89D5-0080CFB8BE77" HideGettingStarted="True" />
+  <MonoDevelop.Ide.ItemProperties.WeatherForeCasting automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.25C0714F-5F0C-4A04-988C-3012750A5E7A" HideGettingStarted="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

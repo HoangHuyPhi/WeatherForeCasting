@@ -13,7 +13,16 @@ namespace WeatherForeCasting
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            userName.Text = userNameInput;
+            userName.Text = "Hi " + userNameInput;
+        }
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            base.PrepareForSegue(segue, sender);
+            if (segue.Identifier == "cityName")
+            {
+                var viewController = segue.DestinationViewController as WeatherViewController;
+                viewController.cityInput = locationName.Text; 
+            }
         }
     }
 }
