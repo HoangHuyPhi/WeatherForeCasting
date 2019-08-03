@@ -1,9 +1,27 @@
 ﻿using System;
 using Newtonsoft.Json;
+using System.Linq;
 namespace WeatherForeCasting
 {
     public class WeatherData
     {
+        public string weatherIconName = ""; 
+        public string updateWeatherIcon(int condition)
+        {
+            if (condition >= 0 && condition <= 300) return "tstorm1.png";
+            else if (condition >= 301 && condition <= 500) return "light_rain.png";
+            else if (condition >= 501 && condition <= 600) return "shower3.png";
+            else if (condition >= 601 && condition <= 700) return "snow4.png";
+            else if (condition >= 701 && condition <= 771) return "fog.png";
+            else if (condition >= 772 && condition <= 799) return "tstorm3.png";
+            else if (condition == 800) return "sunny.png";
+            else if (condition >= 801 && condition <= 804) return "cloudy2.png";
+            else if (condition >= 900 && condition <= 902 || condition >= 905 && condition <= 1000) return "tstorm3.png";
+            else if (condition == 903) return "snow5.png";
+            else if (condition == 904) return "sunny.png";
+            else return "dunno"; 
+        }
+
         [JsonProperty("name")]
         public string Title { get; set; }
 
@@ -61,7 +79,7 @@ namespace WeatherForeCasting
         public double Temperature { get; set; }
 
         [JsonProperty("pressure")]
-        public long Pressure { get; set; }
+        public double Pressure { get; set; }
 
         [JsonProperty("humidity")]
         public long Humidity { get; set; }
@@ -97,7 +115,7 @@ namespace WeatherForeCasting
     public class Weather
     {
         [JsonProperty("id")]
-        public long Id { get; set; }
+        public int Id { get; set; }
 
         [JsonProperty("main")]
         public string Visibility { get; set; }

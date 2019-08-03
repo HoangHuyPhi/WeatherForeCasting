@@ -148,5 +148,19 @@
         </Compile>
         <Compile Include="WeatherData.cs" />
     </ItemGroup>
+    <ItemGroup>
+      <BundleResource Include="Resources\sunny.png" />
+      <BundleResource Include="Resources\tstorm3.png" />
+      <BundleResource Include="Resources\snow5.png" />
+      <BundleResource Include="Resources\light_rain.png" />
+      <BundleResource Include="Resources\fog.png" />
+      <BundleResource Include="Resources\dunno.png" />
+      <BundleResource Include="Resources\cloudy2.png" />
+      <BundleResource Include="Resources\overcast.png" />
+      <BundleResource Include="Resources\shower3.png" />
+      <BundleResource Include="Resources\snow4.png" />
+      <BundleResource Include="Resources\tstorm1.png" />
+      <BundleResource Include="Resources\background.png" />
+    </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

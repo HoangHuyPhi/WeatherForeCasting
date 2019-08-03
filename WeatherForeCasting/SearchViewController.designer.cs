@@ -16,31 +16,35 @@ namespace WeatherForeCasting
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton getButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView imageBackground { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField locationName { get; set; }
 
-        [Outlet]
+        [Action ("UIButton6465_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton searchButton { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel userName { get; set; }
+        partial void UIButton6465_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
+            if (getButton != null) {
+                getButton.Dispose ();
+                getButton = null;
+            }
+
+            if (imageBackground != null) {
+                imageBackground.Dispose ();
+                imageBackground = null;
+            }
+
             if (locationName != null) {
                 locationName.Dispose ();
                 locationName = null;
-            }
-
-            if (searchButton != null) {
-                searchButton.Dispose ();
-                searchButton = null;
-            }
-
-            if (userName != null) {
-                userName.Dispose ();
-                userName = null;
             }
         }
     }

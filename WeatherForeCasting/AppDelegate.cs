@@ -20,7 +20,15 @@ namespace WeatherForeCasting
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
-
+            UINavigationBar.Appearance.SetBackgroundImage(new UIImage(), UIBarMetrics.Default);
+            UINavigationBar.Appearance.ShadowImage = new UIImage();
+            UINavigationBar.Appearance.BackgroundColor = UIColor.Clear;
+            UINavigationBar.Appearance.Translucent = true;
+            UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes
+            {
+                ForegroundColor = UIColor.White
+            };
+            UINavigationBar.Appearance.TintColor = UIColor.White;
             return true;
         }
 

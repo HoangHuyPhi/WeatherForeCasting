@@ -2,27 +2,33 @@ using Foundation;
 using System;
 using UIKit;
 
+
 namespace WeatherForeCasting
 {
+    interface IWeather
+    {
+        void GetCityName(string cityName);
+    }
+
     public partial class SearchViewController : UIViewController
     {
-        public string userNameInput;
+        public WeatherViewController viewController;
         public SearchViewController (IntPtr handle) : base (handle)
         {
         }
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            userName.Text = "Hi " + userNameInput;
+            imageBackground.Image = UIImage.FromBundle("background.png");
+            getButton.Layer.CornerRadius = 10;
+            getButton.Layer.BorderWidth = 1;
+            getButton.Layer.BorderColor = UIColor.White.CGColor;
         }
-        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        partial void UIButton6465_TouchUpInside(UIButton sender)
         {
-            base.PrepareForSegue(segue, sender);
-            if (segue.Identifier == "cityName")
-            {
-                var viewController = segue.DestinationViewController as WeatherViewController;
-                viewController.cityInput = locationName.Text; 
-            }
+            if (viewController != null) 
+            viewController.GetCityName(locationName.Text); 
+            NavigationController.PopViewController(false);
         }
     }
 }
