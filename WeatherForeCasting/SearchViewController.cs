@@ -12,6 +12,7 @@ namespace WeatherForeCasting
 
     public partial class SearchViewController : UIViewController
     {
+        // Make an instance of viewController to pass data by using interface. 
         public WeatherViewController viewController;
         public SearchViewController (IntPtr handle) : base (handle)
         {
@@ -19,6 +20,7 @@ namespace WeatherForeCasting
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            // Update UI
             imageBackground.Image = UIImage.FromBundle("background.png");
             getButton.Layer.CornerRadius = 10;
             getButton.Layer.BorderWidth = 1;

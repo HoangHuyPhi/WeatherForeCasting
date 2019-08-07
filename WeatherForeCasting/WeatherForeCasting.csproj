@@ -147,6 +147,7 @@
           <DependentUpon>WeatherViewController.cs</DependentUpon>
         </Compile>
         <Compile Include="WeatherData.cs" />
+        <Compile Include="RestService.cs" />
     </ItemGroup>
     <ItemGroup>
       <BundleResource Include="Resources\sunny.png" />

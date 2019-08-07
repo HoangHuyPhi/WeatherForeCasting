@@ -43,6 +43,7 @@ namespace WeatherForeCasting
             // Release any cached data, images, etc that aren't in use.
         }
 
+        // Passing data by using segue 
         public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
         {
             base.PrepareForSegue(segue, sender);

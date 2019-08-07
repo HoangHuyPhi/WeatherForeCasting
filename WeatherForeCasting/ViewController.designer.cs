@@ -30,10 +30,6 @@ namespace WeatherForeCasting
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField userName { get; set; }
 
-        [Action ("NextButton_TouchUpInside:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void NextButton_TouchUpInside (UIKit.UIButton sender);
-
         void ReleaseDesignerOutlets ()
         {
             if (imageBackground != null) {

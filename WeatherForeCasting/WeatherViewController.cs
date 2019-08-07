@@ -3,45 +3,10 @@ using System;
 using UIKit;
 using System.Linq;
 using CoreLocation;
-using System.Diagnostics;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using System.Net.Http;
 
 namespace WeatherForeCasting
 {
-
-    public class RestService
-    {
-        HttpClient client;
-
-        public RestService()
-        {
-
-            client = new HttpClient();
-        }
-
-        public async Task<WeatherData> GetWeatherData(String query)
-        {
-            WeatherData result = null;
-            try
-            {
-                var response = await client.GetAsync(query);
-                if (response.IsSuccessStatusCode)
-                {
-                    var content = await response.Content.ReadAsStringAsync();
-                    result = JsonConvert.DeserializeObject<WeatherData>(content);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine("\t\tERROR {0}", ex.Message);
-            }
-            return result;
-        }
-	}
-
-
     public partial class WeatherViewController : UIViewController, ICLLocationManagerDelegate, IWeather
     {
         public string OpenWeatherMapEndpoint = "https://api.openweathermap.org/data/2.5/weather";
@@ -57,13 +22,14 @@ namespace WeatherForeCasting
             base.ViewDidLoad();
             imageBackground.Image = UIImage.FromBundle("background.png");
             userName.Text = "Name: " + userNameInput;
+            // Location setup 
             locationManager.DesiredAccuracy = 1000;
             locationManager.Delegate = this;
             locationManager.RequestWhenInUseAuthorization();
             if (CLLocationManager.LocationServicesEnabled)
             locationManager.StartUpdatingLocation();
         }    
-        
+        // Updating Location dATA
         [Export("locationManager:didUpdateLocations:")]
         public void LocationsUpdatedAsync(CLLocationManager manager, CLLocation[] locations)
         {
@@ -74,6 +40,7 @@ namespace WeatherForeCasting
                 GenerateRequestUri(OpenWeatherMapEndpoint, location);
             }
         }
+
         // Get Weather API by lat,long
         public async Task<WeatherData> GenerateRequestUri(string url, CLLocation location)
         {
